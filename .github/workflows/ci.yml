@@ -92,7 +92,7 @@ jobs:
           bench get-app test $GITHUB_WORKSPACE
           bench setup requirements --dev
           bench new-site --db-root-password root --admin-password admin test_site
-          bench --site test_site install-app test
+          bench --site test_site install-app Ecommerce
           bench build
         env:
           CI: 'Yes'
@@ -101,6 +101,6 @@ jobs:
         working-directory: /home/runner/frappe-bench
         run: |
           bench --site test_site set-config allow_tests true
-          bench --site test_site run-tests --app test
+          bench --site test_site run-tests --app Ecommerce
         env:
           TYPE: server

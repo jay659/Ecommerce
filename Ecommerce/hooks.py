@@ -1,4 +1,4 @@
-app_name = "test"
+app_name = "Ecommerce"
 app_title = "Ecommerce"
 app_publisher = "jay"
 app_description = "Ecommerce"
@@ -10,15 +10,19 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/test/css/test.css"
-# app_include_js = "/assets/test/js/test.js"
+# app_include_css = "/assets/Ecommerce/css/Ecommerce.css"
+# app_include_js = "/assets/Ecommerce/js/Ecommerce.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/test/css/test.css"
-# web_include_js = "/assets/test/js/test.js"
+web_include_css = {
+    "item_page": "/assets/your_custom_app/css/item.css"
+}
+web_include_js = {
+    "item_page": "/assets/your_custom_app/js/item.js"
+}
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "test/public/scss/website"
+# website_theme_scss = "Ecommerce/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -36,7 +40,7 @@ app_license = "mit"
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "test/public/icons.svg"
+# app_include_icons = "Ecommerce/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -53,50 +57,50 @@ app_license = "mit"
 # ----------
 
 # automatically create page for each record of this doctype
-# website_generators = ["Web Page"]
+website_generators = ["Web Page"]
 
 # Jinja
 # ----------
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "test.utils.jinja_methods",
-# 	"filters": "test.utils.jinja_filters"
+# 	"methods": "Ecommerce.utils.jinja_methods",
+# 	"filters": "Ecommerce.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "test.install.before_install"
-# after_install = "test.install.after_install"
+# before_install = "Ecommerce.install.before_install"
+# after_install = "Ecommerce.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "test.uninstall.before_uninstall"
-# after_uninstall = "test.uninstall.after_uninstall"
+# before_uninstall = "Ecommerce.uninstall.before_uninstall"
+# after_uninstall = "Ecommerce.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "test.utils.before_app_install"
-# after_app_install = "test.utils.after_app_install"
+# before_app_install = "Ecommerce.utils.before_app_install"
+# after_app_install = "Ecommerce.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "test.utils.before_app_uninstall"
-# after_app_uninstall = "test.utils.after_app_uninstall"
+# before_app_uninstall = "Ecommerce.utils.before_app_uninstall"
+# after_app_uninstall = "Ecommerce.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "test.notifications.get_notification_config"
+# notification_config = "Ecommerce.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -135,39 +139,39 @@ app_license = "mit"
 
 # scheduler_events = {
 # 	"all": [
-# 		"test.tasks.all"
+# 		"Ecommerce.tasks.all"
 # 	],
 # 	"daily": [
-# 		"test.tasks.daily"
+# 		"Ecommerce.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"test.tasks.hourly"
+# 		"Ecommerce.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"test.tasks.weekly"
+# 		"Ecommerce.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"test.tasks.monthly"
+# 		"Ecommerce.tasks.monthly"
 # 	],
 # }
 
-# Testing
+# Ecommerceing
 # -------
 
-# before_tests = "test.install.before_tests"
+# before_Ecommerces = "Ecommerce.install.before_Ecommerces"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "test.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "Ecommerce.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "test.task.get_dashboard_data"
+# 	"Task": "Ecommerce.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -181,13 +185,13 @@ app_license = "mit"
 
 # Request Events
 # ----------------
-# before_request = ["test.utils.before_request"]
-# after_request = ["test.utils.after_request"]
+# before_request = ["Ecommerce.utils.before_request"]
+# after_request = ["Ecommerce.utils.after_request"]
 
 # Job Events
 # ----------
-# before_job = ["test.utils.before_job"]
-# after_job = ["test.utils.after_job"]
+# before_job = ["Ecommerce.utils.before_job"]
+# after_job = ["Ecommerce.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -217,7 +221,7 @@ app_license = "mit"
 # --------------------------------
 
 # auth_hooks = [
-# 	"test.auth.validate"
+# 	"Ecommerce.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.

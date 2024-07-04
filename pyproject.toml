@@ -1,9 +1,9 @@
 [project]
-name = "Ecommerce"
+name = "ecommerce"
 authors = [
     { name = "jay", email = "jay400479@gmail.com"}
 ]
-description = "Ecommerce"
+description = "ecommerce"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
